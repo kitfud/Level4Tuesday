@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+ 
+    <div>
+      <h1>Snowboard Site</h1>
+      <h2>We sell boards and bindings!</h2>
+    </div>
+    
+    <div>
+    <h4>Snowboard Size</h4>
+    <div>153",156",159"</div>
+    <input id="size-input" type="range" value="156" min="153" max="159" step="3"></input>
+    </div>
+
+    <div> 
+    <h4>Snowboard Type</h4>
+    <select id="snowboard-type">
+      <option value="freestyle"> Freestyle</option>
+      <option value="freeride"> Freeride</option>
+      <option value="carving"> Carving</option>
+    </select>
+    </div>
+
+    <div>
+      <h4>Snowboard Stickers</h4>
+      <input type ="checkbox" name="stickers" value="cat">Cat </input><br>
+      <input type ="checkbox" name="stickers" value="save-the-planet">Save The Planet </input><br>
+      <input type ="checkbox" name="stickers" value="air-pollution">Air Pollution is Bad!</input><br>
+      <input type ="checkbox" name="stickers" value="I-love-mom">I Love Mom</input><br>
+    </div>
+<!--Additions added in for class: radio buttons, input field, button for "extra" 
+<div style ="margin-bottom:20px">
+  <h4>Sharpened Edges</h4>
+  <input type="radio" name="edges" value="yes">Yes</input>
+  <input type = "radio" name="edges" value="no">No</input> 
+</div>
+-->
+
+<!-- CHECKBOX for extra values
+<div>
+  <h4 style = "margin-bottom:2px">Extra</h4>
+  <input id ="sharpen" type="checkbox" value="sharpen edges">Sharpen Edges (+$20)</input>
+</div>
+-->
+
+<!--
+<div>
+  <h4>Zip code needs to be 98102</h4>
+  <input id = "zip" type="text"></input>
+</div>
+-->
+
+<div> 
+ <h4>Zip Code</h4>
+ <input style="margin-bottom: 20px" id="zip" type = "text"></input> 
+</div>
+
+<button onchange="onSubmit()">Test Button</button>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
